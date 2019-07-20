@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change the Background Color with JavaScript</title>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        var btn = document.getElementsByClassName("change_colour")[0];
+        btn.addEventListener("click", function(){
+            var randomNumber = Math.floor(Math.random() * 10);
+            var color = "red";
+            if(randomNumber === 0){
+                color = "yellow";
+            }
+            else if(randomNumber === 1){
+                color = "orange";
+            }
+            else if(randomNumber === 2){
+                color = "purple";
+            }
+            else if(randomNumber === 3){
+                color = "green";
+            }
+            else if(randomNumber === 4){
+                color = "blue";
+            }
+            else if(randomNumber === 5){
+                color = "black";
+            }
+            else if(randomNumber === 6){
+                color = "white";
+            }
+            else if(randomNumber === 7){
+                color = "lime";
+            }
+            else if(randomNumber === 8){
+                color = "magenta";
+            }
+            else if(randomNumber === 9){
+                color = "silver";
+            }
+        document.body.style.background = color;
+        });
+    });
+</script>
+</head>
+<body>
+    <button class="change_colour">Click here to change the colour of the page!</button>
+</body>
+</html>
